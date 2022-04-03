@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.284" />
+    #(Textview merupakan memiliki fungsi untuk menamplkan text di layar pada text view diatas akan terkoneksi dengan data yang disimpan dengan textview akan
+    menampilkan nama,misal di activity main ppertama menuliskan nama maka pada keluaran akan menampilkan text nama yang ditulis)
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data telah disimpan"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+    #(Textview merupakan memiliki fungsi untuk menamplkan text di layar pada text view diatas akan terkoneksi dengan data yang disimpan dengan textview akan
+    menampilkan data telah disimpan,misal di activity main ppertama menuliskan dat telah disimpan maka pada keluaran akan menampilkan text data anda telah disimpan yang ditulis)
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="173dp"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.619"
+        app:srcCompat="@drawable/profile_female_png" />
+#(pada imageviw akan menamppilkan gambar yang dimasukkan,karena beberapa suatu hal say memasukkan gambar avatar yang tersedia di android studio,
+    untuk mengaplod gambar misal itu foto kita tinggal klik layout lalu pilih gambar dan drag down gambar di design)
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.065" />
+    #(pada button kali ini kita menggunkan button dengan menuliskan text ok,dengan layout width dan heigth warap content)
+
+</androidx.constraintlayout.widget.ConstraintLayout>
